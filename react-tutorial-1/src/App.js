@@ -36,25 +36,25 @@ function App() {
         title1={expenses[0].title}
         amount1={expenses[0].amount}
         date1={expenses[0].date}
-      ></ExpenseItem>
+      />
 
       <ExpenseItem
         title1={expenses[1].title} 
         amount1={expenses[1].amount}
         date1= {expenses[1].date}
-      ></ExpenseItem>
+      />
 
       <ExpenseItem
         title1={expenses[2].title}
         amount1={expenses[2].amount}
         date1= {expenses[2].date}
-      ></ExpenseItem>
+      />
 
        <ExpenseItem
         title1={expenses[3].title}
         amount1={expenses[3].amount}
         date1={expenses[3].date}
-      ></ExpenseItem>
+      />
     </div>
   );
 }
