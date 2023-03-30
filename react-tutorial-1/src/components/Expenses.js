@@ -1,5 +1,6 @@
 //import style
 import "./Expenses.css";
+//uses expenseItem to formulate full item component
 import ExpenseItem from "./ExpenseItem";
 //import App from '../App';
 
@@ -7,7 +8,8 @@ function Expenses(props) {
   return (
     <div>
       <div className="expenses">
-        {/*grabs first title, amount, and date at index [0] etc.*/}
+        {/*grabs first title, amount, and date at index [x] for each item
+        from App.js expenses array and sends them into ExpenseItem.*/}
         <ExpenseItem
           title1={props.items[0].title}
           amount1={props.items[0].amount}

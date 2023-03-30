@@ -3,7 +3,7 @@ import Expenses from "./components/Expenses";
 
 function App() {
   
-  //objects
+  //actual item object descriptions (const for now)
   const expenses = [
     {
       id: "e1",
@@ -31,6 +31,7 @@ function App() {
     },
   ];
   
+  //calls components to build and render
   return (
     <div>
       {/*use Expenses.js here*/}
