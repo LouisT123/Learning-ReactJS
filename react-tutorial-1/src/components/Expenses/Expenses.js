@@ -2,12 +2,14 @@
 import "./Expenses.css";
 //uses expenseItem to formulate full item component
 import ExpenseItem from "./ExpenseItem";
+//use custom wrapper component for drop shadow
+import Card from "../UI/Card";
 //import App from '../App';
 
 function Expenses(props) {
   return (
-    <div>
-      <div className="expenses">
+  
+      <Card className="expenses">
         {/*grabs first title, amount, and date at index [x] for each item
         from App.js expenses array and sends them into ExpenseItem.*/}
         <ExpenseItem
@@ -33,8 +35,8 @@ function Expenses(props) {
           amount1={props.items[3].amount}
           date1={props.items[3].date}
         />
-      </div>
-    </div>
+     
+    </Card>
   );
 }
 //export to make it usuable outside this file

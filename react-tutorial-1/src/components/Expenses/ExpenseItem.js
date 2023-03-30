@@ -1,5 +1,9 @@
+//grab specified date format component
 import ExpenseDate from "./ExpenseDate";
+//styling
 import "./ExpenseItem.css";
+//use custom wrapper component for drop shadow
+import Card from "../UI/Card";
 
 function ExpenseItem(props) {
 
@@ -7,7 +11,7 @@ function ExpenseItem(props) {
 assembles into an ExpenseItem*/
   return (
      /* className for css styling*/
-    <div className="expense-item">
+    <Card className="expense-item">
 
        {/*use expense date component, self closing*/}
        <ExpenseDate date1={props.date1}/>
@@ -19,7 +23,7 @@ assembles into an ExpenseItem*/
           ${props.amount1}</div>
       </div>
       
-    </div>
+    </Card>
   );
 }
 
