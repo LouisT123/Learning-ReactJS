@@ -10,7 +10,7 @@ import { useState } from "react";
 function ExpenseItem(props) {
 
   //react hook called inside component function
-  const [title, setTitle] = useState(props.title);
+  const [currentTitle, setTitle] = useState(props.title1);
 
   //click handler
   function clickHandler() {
@@ -29,7 +29,7 @@ assembles into an ExpenseItem*/
 
         {/* style and print title and amount */}
       <div className="expense-item_description">
-        <h2>{title}</h2>
+        <h2>{currentTitle}</h2>
         <div className="expense-item_price">
           ${props.amount1}</div>
       </div>
