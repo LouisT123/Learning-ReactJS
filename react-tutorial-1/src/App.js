@@ -1,5 +1,9 @@
 //import ExpenseItem from "./components/ExpenseItem";
 import Expenses from "./components/Expenses/Expenses";
+//import form user input
+import NewExpense from "./components/NewExpense/NewExpense";
+
+
 
 function App() {
   
@@ -34,7 +38,10 @@ function App() {
   //calls components to build and render
   return (
     <div>
-      {/*use Expenses.js here*/}
+      {/*User input for new expense */}
+      <NewExpense />
+
+      {/*Display expenses*/}
       <Expenses items={expenses}/>
     </div>
   );
