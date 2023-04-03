@@ -1,7 +1,7 @@
 import "./ExpenseForm.css";
 import { useState } from "react";
 
-function ExpenseForm() {
+function ExpenseForm(props) {
     
     //Multiple states
     //state to store entered title value after form is submitted 
@@ -92,8 +92,8 @@ function ExpenseForm() {
             amount: enteredAmount,
             date: new Date(enteredDate)
         };
-        //display object in log
-        console.log(expenseData);
+        //grab expense data
+        props.onSaveExpenseData();
         //reset text fields
         setEnteredTitle('');
         setEnteredAmount('');

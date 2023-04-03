@@ -34,11 +34,15 @@ function App() {
     },
   ];
   
+  function addExpenseHandler(expense) {
+    console.log('In app.js');
+    console.log(expense);
+  }
   //calls components to build and render
   return (
     <div>
       {/*User input for new expense */}
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler}/>
 
       {/*Display expenses*/}
       <Expenses items={expenses}/>

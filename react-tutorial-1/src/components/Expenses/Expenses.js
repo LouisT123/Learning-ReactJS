@@ -4,11 +4,25 @@ import "./Expenses.css";
 import ExpenseItem from "./ExpenseItem";
 //use custom wrapper component for drop shadow
 import Card from "../UI/Card";
-//import App from '../App';
+//import expense filter
+import ExpensesFilter from "./ExpensesFilter";
+//state
+import { useState } from "react";
 
 function Expenses(props) {
+  const [filteredYear, setFilteredYear] = useState("2023");
+
+  function filterChangeHandler(selectedYear) {
+    setFilteredYear(selectedYear);
+    //console.log('Expenses.js');
+    //console.log(selectedYear);
+  }
   return (
-  
+    <div>
+      <ExpensesFilter
+        currYear={filteredYear}
+        onChangeFilter={filterChangeHandler}
+      />
       <Card className="expenses">
         {/*grabs first title, amount, and date at index [x] for each item
         from App.js expenses array and sends them into ExpenseItem.*/}
@@ -35,8 +49,8 @@ function Expenses(props) {
           amount1={props.items[3].amount}
           date1={props.items[3].date}
         />
-     
-    </Card>
+      </Card>
+    </div>
   );
 }
 //export to make it usuable outside this file
