@@ -4,19 +4,8 @@ import ExpenseDate from "./ExpenseDate";
 import "./ExpenseItem.css";
 //use custom wrapper component for drop shadow
 import Card from "../UI/Card";
-//use state
-import { useState } from "react";
 
 function ExpenseItem(props) {
-
-  //react hook called inside component function
-  const [currentTitle, setTitle] = useState(props.title1);
-
-  //click handler
-  function clickHandler() {
-    setTitle('Updated!');
-    console.log('updated');
-  };
 
 /*Takes data and displays + styles
 assembles into an ExpenseItem*/
@@ -29,14 +18,11 @@ assembles into an ExpenseItem*/
 
         {/* style and print title and amount */}
       <div className="expense-item_description">
-        <h2>{currentTitle}</h2>
+        <h2>{props.title1}</h2>
         <div className="expense-item_price">
           ${props.amount1}</div>
       </div>
       
-      {/* adding button click, points to clickHandler event func*/}
-      <button onClick={clickHandler}>Change Title</button>
-
     </Card>
   );
 }
