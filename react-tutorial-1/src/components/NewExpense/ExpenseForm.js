@@ -85,7 +85,7 @@ function ExpenseForm(props) {
     };
 
     //submit form object
-    function submitHandler(event) {
+    const submitHandler = (event) => {
         event.preventDefault();
         const expenseData = {
             title: enteredTitle,
@@ -106,19 +106,29 @@ function ExpenseForm(props) {
                 {/*input Title*/}
                 <div className="new-expense_control">
                     <label>Title</label>
-                    <input type='text' value={enteredTitle} onChange={titleChangeHandler} />
+                    <input type='text' 
+                        value={enteredTitle} 
+                        onChange={titleChangeHandler} />
                 </div>
 
                  {/*input Amount*/}
                 <div className="new-expense_control">
                     <label>Amount</label>
-                    <input type='text' value={enteredAmount} min="0.01" step="0.01" onChange={amountChangeHandler} />
+                    <input type='number' 
+                        min='0.01'
+                        step='0.01'
+                        value={enteredAmount} 
+                        onChange={amountChangeHandler} />
                 </div>
 
                  {/*input Date*/}
                 <div className="new-expense_control">
                     <label>Date</label>
-                    <input type='date' value={enteredDate} min="2000-01-01" max="2100-12-31" onChange={dateChangeHandler}/>
+                    <input type='date' 
+                        min='1950-01-01' 
+                        max='2099-12-31' 
+                        value={enteredDate} 
+                        onChange={dateChangeHandler}/>
                 </div>
             </div>
 

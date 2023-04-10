@@ -14,13 +14,12 @@ assembles into an ExpenseItem*/
     <Card className="expense-item">
 
        {/*use expense date component, self closing*/}
-       <ExpenseDate date1={props.date1}/>
+       <ExpenseDate date={props.date}/>
 
         {/* style and print title and amount */}
       <div className="expense-item_description">
-        <h2>{props.title1}</h2>
-        <div className="expense-item_price">
-          ${props.amount1}</div>
+        <h2>{props.title}</h2>
+        <div className="expense-item_price">${props.amount}</div>
       </div>
       
     </Card>

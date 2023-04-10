@@ -3,7 +3,7 @@ import ExpenseForm from "./ExpenseForm";
 
 function NewExpense(props) {
   //to pass data up to app js
-  function onSaveExpenseDataHandler(enteredExpenseData) {
+  function saveExpenseDataHandler(enteredExpenseData) {
       const expenseData = {
         ...enteredExpenseData,
         //create unique id 
@@ -17,9 +17,9 @@ function NewExpense(props) {
   return (
     <div className="new-expense">
       {/* call form component*/}
-      <ExpenseForm onSaveExpenseData = {onSaveExpenseDataHandler} />
+      <ExpenseForm onSaveExpenseData = {saveExpenseDataHandler} />
     </div>
   );
-}
+};
 
 export default NewExpense;

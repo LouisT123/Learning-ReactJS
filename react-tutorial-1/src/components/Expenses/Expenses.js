@@ -16,7 +16,8 @@ function Expenses(props) {
     setFilteredYear(selectedYear);
     //console.log('Expenses.js');
     //console.log(selectedYear);
-  }
+  };
+  
   return (
     <div>
       <Card className='expenses'>
@@ -24,12 +25,12 @@ function Expenses(props) {
         currYear={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
-       //array of expense items
+       {/*array of expense items*/}
       {props.items.map((expense) => (
         <ExpenseItem 
-          title ={expense.title1}
-          amount={expense.amount1}
-          date={expense.date1}
+          title ={expense.title}
+          amount={expense.amount}
+          date={expense.date}
         />
       ))}
      </Card>

@@ -3,7 +3,7 @@
     padding: 0 1rem;
   }
   
-  .expenses-filter__control {
+  .expenses-filter_control {
     display: flex;
     width: 100%;
     align-items: center;
