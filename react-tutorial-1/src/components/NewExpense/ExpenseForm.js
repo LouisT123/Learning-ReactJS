@@ -93,7 +93,7 @@ function ExpenseForm(props) {
             date: new Date(enteredDate)
         };
         //grab expense data
-        props.onSaveExpenseData();
+        props.onSaveExpenseData(expenseData);
         //reset text fields
         setEnteredTitle('');
         setEnteredAmount('');
