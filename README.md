@@ -8,4 +8,4 @@ React JS Tutorial Course
 3. in terminal: npm install 
 4. in terminal: npm start
 
-![current webpage](https://github.com/LouisT123/Learning-ReactJS/blob/main/webpagewip2.png)
+![current webpage](https://github.com/LouisT123/Learning-ReactJS/blob/main/working_input.gif)
