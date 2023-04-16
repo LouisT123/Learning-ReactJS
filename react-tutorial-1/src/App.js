@@ -10,9 +10,9 @@ import { useState } from "react";
  const dummy_expenses = [
   {
     id: "e1",
-    title: "Toilet Paper",
-    amount: 94.12,
-    date: new Date(2022, 7, 14),
+    title: "Shoes",
+    amount: 59.99,
+    date: new Date(2023, 2, 14),
   },
   { 
     id: "e2",
