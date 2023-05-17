@@ -1,8 +1,11 @@
 # **Learning-ReactJS**
 React JS Tutorial Course
 
-## Instructions
-*Currently only runs on local machine (not deployed yet, planning to use Firebase).*
+## The app is now deployed on netlify!
+Click here to visit: https://ltexpensetracker.netlify.app
+(note this is not the final build, ie data does not save on website yet, etc)
+
+### Instructions (no longer needed)
 1. clone repo
 2. install node.js
 3. in terminal: npm install 
